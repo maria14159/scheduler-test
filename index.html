@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <div class = "main-container">
+        <div class = "left-part">
+            <div class="buttons">
+                <button onclick="moveToLeft()"><span class="btn-text">❮❮</span></button>
+                <button onclick="moveDayLeft()"><span class="btn-text">❮</span></button>
+                <button onclick="moveDayRight()"><span class="btn-text">❯</span></button>
+                <button onclick="moveToRight()"><span class="btn-text">❯❯</span></button>
+            </div>
+            <div id="plan">
+                <div id="names">
+                    <div id="blank"></div>
+                </div>
+                <div id="table-part">
+                    <table id="table">
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class = "right-part">
+            <h2>Backlog</h2>
+<!--            <div class="search">-->
+<!--                <input type="search" class="search-input" placeholder="Search">-->
+<!--                <button><img class="search-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/OOjs_UI_icon_search-ltr-progressive.svg/600px-OOjs_UI_icon_search-ltr-progressive.svg.png"></button>-->
+<!--            </div>-->
+            <div id="tasks">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

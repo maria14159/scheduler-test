@@ -1,0 +1,122 @@
+body{
+    font-family: Nunito,sans-serif;
+    margin: 0;
+}
+.main-container{
+    display: flex;
+    height: 100vh;
+}
+.left-part{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    flex: 1;
+}
+.right-part{
+    text-align: center;
+    width: 25%;
+    background-color: #a9a9a9;
+    padding: 0 0.5rem 0 0.5rem;
+}
+#plan{
+    display: flex;
+    margin-top: 1rem;
+}
+.table-part{
+    flex:1;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+}
+.search-icon{
+    width: 1rem;
+}
+.search-input{
+    width: 100%;
+}
+.buttons{
+    margin-left: 1rem;
+}
+.btn-text{
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.task{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: lightgrey;
+    border-radius: 3px;
+    cursor: move;
+    text-align: justify;
+    padding: 0.5rem;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h4{
+    margin: 0 0 0.5rem 0;
+    color: darkcyan;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    opacity: 0;
+    background-color: lightgreen;
+    visibility: hidden;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 0.5rem;
+    width: 18vw;
+    word-break: break-all;
+}
+[data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+table{
+    border-spacing:0;
+}
+td{
+    border-bottom: 1px solid gray;
+    width: 9rem;
+    text-align: center;
+    height: 89px;
+    word-break: break-all;
+}
+#dates td{
+    height: 2rem;
+    border: 1px solid gray;
+}
+#blank{
+    height: 2rem!important;
+    padding: 1px;
+    background-color: rgba(0,0,0,0) !important;
+}
+#names{
+    width: 7rem;
+    font-weight: bold;
+}
+#names div{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid rgba(0,0,0,0);
+    border-right: 1px solid gray;
+    height: 90px;
+    background-color: #dcffdb;
+    text-align: center;
+}
+.name p{
+    position: relative;
+    top:40%;
+}
+.task-blue{
+    background-color: lightskyblue;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.task-green{
+    background-color: darkcyan;
+}
